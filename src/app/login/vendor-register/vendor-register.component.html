@@ -1,0 +1,36 @@
+<div class="full-background-color text-white">
+  <app-login-header></app-login-header>
+  <div align="center" class="centralizing" >
+    <h4>Vendor registration form.</h4>
+
+
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="/vendorLogin" style="color: red">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/registration" style="color: red">Register</a>
+      </li>
+    </ul>
+
+    <div style="width: 350px">
+
+
+      <br>
+      <form (ngSubmit)="onSubmit(vendorRegistrationForm)" #vendorRegistrationForm="ngForm"  ngNativeValidate>
+        <input ngModel required name="userName" type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
+        <br>
+        <input ngModel required name="password" type="password" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+        <br>
+        <input ngModel required name="msidn" type="text" id="msidn" class="form-control input-sm chat-input" placeholder="msidn" />
+        <br>
+        <input ngModel required name="extrafeild" type="text" id="extrafeild" class="form-control input-sm chat-input" placeholder="extrafeild" />
+        <br>
+        <button  class="btn btn-danger medium-btn" style="background-color: red" type="submit">Submit</button>
+      </form>
+
+    </div>
+
+    <!-- <app-registration></app-registration>-->
+  </div>
+</div>

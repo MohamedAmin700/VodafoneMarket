@@ -1,0 +1,28 @@
+.centralizing{
+  width: 400px;
+  height: 150px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+}
+.medium-btn{
+  width: 130px;
+  height: 50px;
+}
+.full-background-color{
+  background-color: black;
+  width: 1366px;
+  height:672px;
+}
+
+.logo{
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 90px;
+  height: 90px;
+}
+

@@ -1,0 +1,33 @@
+<div class="full-background-color text-white">
+<app-login-header></app-login-header>
+      <div align="center" class="centralizing" >
+          <h4>Customer Login form.</h4>
+
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/customer" style="color: red">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/customerRegistration" style="color: red">Register</a>
+          </li>
+        </ul>
+
+        <div style="width: 350px">
+
+            <form (ngSubmit)="onSubmit(customerLoginForm)" #customerLoginForm="ngForm" ngNativeValidate>
+                <br>
+                <input ngModel required name="userName" type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" />
+                <br>
+                <input ngModel required name="password" type="password" id="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+                <br>
+                <input ngModel required name="msidn" type="text" id="msidn" class="form-control input-sm chat-input" placeholder="msidn" />
+                <br>
+
+                <button class="btn btn-danger medium-btn" style="background-color: red" type="submit">Login <i class="fa fa-sign-in"></i></button>
+
+            </form>
+        </div>
+
+       <!--<app-registration *ngIf="show"></app-registration>-->
+      </div>
+</div>
